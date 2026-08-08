@@ -13,10 +13,16 @@ import {
 
 export function StudioHeader() {
   const pathname = usePathname();
+  const onEntry = pathname === "/";
+  const hrefFor = (href: string) => {
+    if (href === "/") return onEntry ? "./" : "../";
+    const route = `${href.replace(/^\//, "")}/`;
+    return onEntry ? `./${route}` : `../${route}`;
+  };
 
   return (
     <header className="studio-header">
-      <Link className="wordmark" href="/" aria-label="SkillProof home">
+      <Link className="wordmark" href={hrefFor("/")} aria-label="SkillProof home">
         <span className="wordmark-mark">SP</span>
         <span>
           <strong>SkillProof</strong>
@@ -33,7 +39,7 @@ export function StudioHeader() {
           return (
             <Link
               key={route.href}
-              href={route.href}
+              href={hrefFor(route.href)}
               className={active ? "active" : ""}
             >
               <span>{route.index}</span>

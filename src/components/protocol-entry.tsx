@@ -43,10 +43,10 @@ export function ProtocolEntry() {
             recalibrated.
           </p>
           <div className="entry-actions">
-            <Link href="/proofroom">
+            <Link href="./proofroom/">
               Build a proof braid <ArrowUpRight size={17} />
             </Link>
-            <Link href="/passport" className="secondary">
+            <Link href="./passport/" className="secondary">
               Inspect a passport
             </Link>
           </div>
@@ -113,7 +113,7 @@ export function ProtocolEntry() {
             ))}
           </div>
           <p>{previewAssessment.summary}</p>
-          <Link href="/passport">
+          <Link href="./passport/">
             Open assessment transcript <ArrowUpRight size={15} />
           </Link>
         </aside>
