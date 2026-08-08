@@ -1,0 +1,18 @@
+{
+  "project": "11-skillproof",
+  "name": "SkillProof",
+  "network": "studionet",
+  "chainId": 61999,
+  "status": "deployed",
+  "contractAddress": "0xe1A1f1695B804b16b9B5154F9f0E73FDB20E73f6",
+  "walletAddress": "0xb5be8fA2916Ff4c8C0FC9c6bcF253Ac82C830889",
+  "walletAccount": "skillproof-live-11",
+  "deploymentTxHash": "recorded-in-operator-deployment-log",
+  "configurationTxHash": "recorded-in-operator-deployment-log",
+  "smokeTestTxHash": "recorded-in-operator-deployment-log",
+  "smokeTestRecord": "skillproof-studionet",
+  "explorerBaseUrl": "https://explorer-studio.genlayer.com",
+  "sourceHash": "3ef0bd54e4936dbf51abec532007a036d3d3befff59b6706fe78ace0cf754bbe",
+  "methodCount": 26,
+  "deployedAt": "2026-07-31T02:32:25.009035Z"
+}
